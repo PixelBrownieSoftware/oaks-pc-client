@@ -90,14 +90,24 @@ function Feild() {
   return (
     <div className="App">
       <h1>Feild</h1>
+      <div>
       <label>Catch pokemon</label>
+      </div>
+      <div>
+      <label>Api call: https://pokeapi.co/api/v2/pokemon/</label>
       <input type="text" 
       onChange={(event) => 
         addPokemon(event.target.value)
         }/>
-      <button onClick={addPKMN}>Add to list</button>
+      </div>
+      <div>
+      <button onClick={addPKMN}>Send to Oak's PC</button>
+      </div>
     <div className="json-col">
       <ul>
+      <div>
+      <button onClick={() => window.location.reload(false)}>Reload page</button>
+      </div>
         {jsonDat}
       </ul>
     </div>
