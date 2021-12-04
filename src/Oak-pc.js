@@ -6,7 +6,7 @@ function OakPc() {
   const [listPokemon, setPokemon] = useState([]);
 
   useEffect(() => {
-    Axios.get('http://localhost:3001/fetch').then((response) => {
+    Axios.get('https://oaks-pc-severside5.herokuapp.com/fetch').then((response) => {
       setPokemon(response.data);
     })
     .catch( (error) => { 
@@ -23,7 +23,15 @@ function OakPc() {
             listPokemon.map((pkmn) => {
               return(
                 <div>
-                  <PokemonData name ={pkmn.name}/>
+                  <PokemonData 
+                  name ={pkmn.name}
+                  hp ={pkmn.hp}
+                  attk ={pkmn.attack}
+                  def ={pkmn.defence}
+                  spattk ={pkmn.special_attack}
+                  spdef ={pkmn.special_defence}
+                  spd ={pkmn.speed}
+                  />
                 </div>
               );
             })

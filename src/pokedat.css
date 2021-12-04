@@ -1,0 +1,47 @@
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+    }
+    .content {
+        max-width: 500px;
+        margin: auto;
+        
+    }
+    
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #dd412c;
+        color: white;
+    }
+
+    .buttons{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(197, 50, 107);
+        border-style:unset;
+        color: white;
+    }
+    
+    .stuff{
+        float: center;
+        border-style: solid;
+        background-color: rgb(197, 50, 107);
+        border-color: rgb(160, 10, 10);
+        color: white;
+    }
+    .product{
+        float: left;
+        border-style: solid;
+        block-size: 5cm;
+        width: 10cm;
+        height: 9cm;
+        text-align: left;
+        word-wrap: break-word;
+        background-color: rgb(197, 50, 107);
+        border-color: rgb(160, 10, 10);
+        color: white;
+    }
+    .image {
+        height: 150px;
+        width: 150px;
+      }

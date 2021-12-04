@@ -34,7 +34,7 @@ function Feild() {
       };
       const statFunc = function (item, index) {
           var str = item['stat']['name'];
-          //str += " " + item['base_stat'];
+          console.log(str);
           
           switch(str){
             default:
@@ -51,7 +51,7 @@ function Feild() {
               case "special-defense":
                   Csp_def = item['base_stat'];
               break;
-              case "health":
+              case "hp":
                   Chp = item['base_stat'];
               break;
               case "speed":
@@ -66,7 +66,9 @@ function Feild() {
       //console.log("Stats: ");
       jsonFile['stats'].forEach(statFunc);
 
-      Axios.post('http://localhost:3001/insert', 
+      Axios.post(
+      //http://localhost:3001
+      'https://oaks-pc-severside5.herokuapp.com/insert', 
       {
         name : Cname,
         health : Chp,
