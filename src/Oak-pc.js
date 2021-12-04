@@ -31,6 +31,8 @@ function OakPc() {
                   spattk ={pkmn.special_attack}
                   spdef ={pkmn.special_defence}
                   spd ={pkmn.speed}
+                  type1 ={pkmn.types.type1}
+                  type2 ={pkmn.types.type2}
                   />
                 </div>
               );
